@@ -70,9 +70,11 @@ public class CommonAPI {
         }
     }
 
-    public void clearField(String locator) {driver.findElement(By.id(locator)).clear();}
+    public void clearField(String locator) {
+        driver.findElement(By.id(locator)).clear();}
 
-    public void navigateBack() {driver.navigate().back();}
+    public void navigateBack() {
+        driver.navigate().back();}
 }
 
 

@@ -13,6 +13,8 @@
         <module>ebay</module>
         <module>Macys</module>
         <module>Walgreens</module>
+        <module>JCPenney</module>
+        <module>JCPenney1</module>
     </modules>
     <dependencyManagement>
         <dependencies>

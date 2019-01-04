@@ -6,15 +6,15 @@ import base.CommonAPI;
 public class MacysSearchPage extends CommonAPI {
 
     public void searchMenu(){
-        typeOnElementEntry("#globalSearchInputField", "Dress");
+        typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Dress");
         navigateBack();
-        typeOnElementEntry("#globalSearchInputField", "Handbags");
+        typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Handbags");
         navigateBack();
-        typeOnElementEntry("#globalSearchInputField", "Pants");
+        typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Pants");
         navigateBack();
-        typeOnElementEntry("#globalSearchInputField", "makeup");
+        typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "makeup");
         navigateBack();
-        typeOnElementEntry("#globalSearchInputField", "Shirt");
+        typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Shirt");
         navigateBack();
     }
 }
