@@ -7,22 +7,22 @@ public class CVSSearchPage extends CommonAPI {
 
     public void searchMenu(){
 
-        typeOnElementEntry(".gr__cvs_com","bag");
+        typeOnElementEntry("#query-search-box","bag");
         //clearField(".gr__cvs_com");
         navigateBack();
-        typeOnElementEntry(".gr__cvs_com", "medicine");
+        typeOnElementEntry("#query-search-box", "medicine");
         //clearField(".gr__cvs_com");
         navigateBack();
-        typeOnElementEntry(".gr__cvs_com", "candy");
+        typeOnElementEntry("#query-search-box", "candy");
         //clearField(".gr__cvs_com");
         navigateBack();
 
-        typeOnElementEntry(".gr__cvs_com", "makeup");
+        typeOnElementEntry("#query-search-box", "makeup");
         //clearField(".gr__cvs_com");
 
         navigateBack();
 
-        typeOnElementEntry(".gr__cvs_com", "chips");
+        typeOnElementEntry("#query-search-box", "chips");
         //clearField(".gr__cvs_com");
         navigateBack();
     }

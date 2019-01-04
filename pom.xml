@@ -14,7 +14,7 @@
         <module>Macys</module>
         <module>Walgreens</module>
         <module>JCPenney</module>
-        <module>JCPenney1</module>
+        <module>CVS</module>
     </modules>
     <dependencyManagement>
         <dependencies>
