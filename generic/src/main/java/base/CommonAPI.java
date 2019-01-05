@@ -20,7 +20,7 @@ public class CommonAPI {
     public void setUp(@Optional String url) {
         System.setProperty("webdriver.chrome.driver" , "/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.navigate().to(url);
     }
 
@@ -51,6 +51,7 @@ public class CommonAPI {
             }
         }
     }
+
     public void typeOnElementEntry(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
@@ -76,5 +77,6 @@ public class CommonAPI {
     public void navigateBack() {
         driver.navigate().back();}
 }
+
 
 

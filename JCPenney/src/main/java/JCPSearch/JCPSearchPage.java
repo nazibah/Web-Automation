@@ -1,15 +1,20 @@
 package JCPSearch;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 
 public class JCPSearchPage extends CommonAPI {
 
-    public void searchMenu(){
+    public void searchMenu() {
 
         typeOnElementEntry("#searchInputId", "Dress");
         navigateBack();
 
 
+    }
+
+
+    }
 
 //        typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Handbags");
 //        navigateBack();
@@ -19,5 +24,3 @@ public class JCPSearchPage extends CommonAPI {
 //        navigateBack();
 //        typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Shirt");
 //        navigateBack();
-    }
-}

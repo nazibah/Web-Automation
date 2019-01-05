@@ -5,7 +5,7 @@ import base.CommonAPI;
 
 public class MacysSearchPage extends CommonAPI {
 
-    public void searchMenu(){
+    public void searchMenu() {
         typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Dress");
         navigateBack();
         typeOnElementEntry("//*[@id=\"globalSearchInputField\"]", "Handbags");

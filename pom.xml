@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>CVS</module>
         <module>generic</module>
         <module>ebay</module>
         <module>Macys</module>
         <module>Walgreens</module>
         <module>JCPenney</module>
-        <module>CVS</module>
     </modules>
     <dependencyManagement>
         <dependencies>

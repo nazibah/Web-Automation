@@ -4,9 +4,8 @@ import org.testng.annotations.Test;
 public class JCPTestHome extends JCPSearchPage {
 
     @Test
-    public void test1() {searchMenu();
-
-
+    public void test1() {
+        searchMenu();
 
 
     }
