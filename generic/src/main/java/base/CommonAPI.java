@@ -1,14 +1,18 @@
 package base;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
@@ -18,10 +22,15 @@ public class CommonAPI {
 
     @BeforeMethod
     public void setUp(@Optional String url) {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
         System.setProperty("webdriver.chrome.driver" , "/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebDriver driver =new ChromeDriver(options);
+
         driver.navigate().to(url);
+
     }
 
     @AfterMethod
